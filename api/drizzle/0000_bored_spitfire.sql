@@ -3,5 +3,7 @@ CREATE TABLE IF NOT EXISTS "products" (
 	"name" varchar(255) NOT NULL,
 	"description" text,
 	"image" varchar(255),
-	"price" double precision NOT NULL
+	"price" double precision NOT NULL,
+	"deleted_at" timestamp DEFAULT NULL,
+	"created_at" timestamp DEFAULT now() NOT NULL
 );
